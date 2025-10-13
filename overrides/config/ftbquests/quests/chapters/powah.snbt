@@ -1,0 +1,56 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powah"
+	group: "71BDA73F0780AB35"
+	id: "5BEA878970896047"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "31D07AD51D514930"
+			size: 2.0d
+			tasks: [{
+				count: 16L
+				id: "37F82361C09904F6"
+				item: { count: 1, id: "powah:dielectric_paste" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["31D07AD51D514930"]
+			id: "7A0C022DAE798D6A"
+			tasks: [{
+				id: "40ACFB6AA693DA5E"
+				item: { count: 1, id: "powah:energizing_orb" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0C022DAE798D6A"]
+			id: "55ED1459203183AD"
+			tasks: [{
+				id: "2487FC5754DF5FCE"
+				item: { count: 1, id: "powah:energizing_rod_starter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55ED1459203183AD"]
+			id: "4EC2D75F4AED5A10"
+			tasks: [{
+				id: "20B24162DFCA3719"
+				item: { count: 1, id: "powah:steel_energized" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+	]
+}

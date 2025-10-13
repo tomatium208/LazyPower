@@ -1,0 +1,177 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "oritech"
+	group: "71BDA73F0780AB35"
+	icon: {
+		id: "oritech:super_ai_chip"
+	}
+	id: "1C9E0BD5DBB6FCC3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0F64C1FB1E6819DC"
+			size: 2.0d
+			tasks: [{
+				count: 16L
+				id: "694A61C38E8DD1E3"
+				item: { count: 1, id: "oritech:nickel_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F64C1FB1E6819DC"]
+			id: "7180AF4ACF74A231"
+			tasks: [{
+				id: "6828DA3F55F48CCF"
+				item: { count: 1, id: "oritech:steel_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F64C1FB1E6819DC"]
+			id: "2EE03A2EBA3A70D5"
+			tasks: [{
+				id: "667CA614DCEB8BB1"
+				item: { count: 1, id: "oritech:electrum_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["06C1AC20A577108B"]
+			id: "3040B1CD3BEF47B7"
+			tasks: [{
+				id: "79E37EC67468D5DE"
+				item: { count: 1, id: "oritech:motor" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7180AF4ACF74A231"]
+			id: "06C1AC20A577108B"
+			tasks: [{
+				id: "046D31495938B46F"
+				item: { count: 1, id: "oritech:magnetic_coil" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3040B1CD3BEF47B7"]
+			id: "7A01C880C76EBB8E"
+			tasks: [{
+				id: "58861314FD02F4D6"
+				item: { count: 1, id: "oritech:centrifuge_block" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A01C880C76EBB8E"]
+			id: "26BA38E8D97678AD"
+			tasks: [{
+				id: "6B81266924D2DE37"
+				item: { count: 1, id: "oritech:plastic_sheet" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"26BA38E8D97678AD"
+				"26603E72192F55B2"
+			]
+			id: "7966C43C6EE6B030"
+			tasks: [{
+				id: "44A746F09AD0F068"
+				item: { count: 1, id: "oritech:processing_unit" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26603E72192F55B2"]
+			id: "7E3AC18142D58D71"
+			tasks: [{
+				id: "6A8FF05540F46D1D"
+				item: { count: 1, id: "oritech:silicon_wafer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A01C880C76EBB8E"]
+			id: "26603E72192F55B2"
+			tasks: [{
+				id: "5A086F66C5F81AB2"
+				item: { count: 1, id: "oritech:carbon_fibre_strands" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7966C43C6EE6B030"
+				"7E3AC18142D58D71"
+				"4D8CF3AC564AF624"
+			]
+			id: "606B922457F83D35"
+			tasks: [{
+				id: "2D6123A31B99CA86"
+				item: { count: 1, id: "oritech:advanced_computing_engine" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7966C43C6EE6B030"]
+			id: "1A7677B47D33CA60"
+			tasks: [{
+				id: "0942E7A662F45C88"
+				item: { count: 1, id: "oritech:flux_gate" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["606B922457F83D35"]
+			id: "151403916F90BA31"
+			size: 2.0d
+			tasks: [{
+				id: "6EA5809961BB9BA1"
+				item: { count: 1, id: "oritech:super_ai_chip" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A7677B47D33CA60"]
+			id: "4D8CF3AC564AF624"
+			tasks: [{
+				id: "550BF02D34F747BC"
+				item: { count: 1, id: "oritech:atomic_forge_block" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+	]
+}
