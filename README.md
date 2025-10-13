@@ -1,2 +1,4 @@
+# 開発中
+
 # LazyPower
-a Modpack For Minecraft 1.21.1.
+Minecraft 1.21.1用のModpackです。
