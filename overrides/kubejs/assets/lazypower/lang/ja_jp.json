@@ -1,14 +1,24 @@
 {
+    "item.lazypower.power_star": "パワースター",
+    "item.lazypower.valine3g_star": "バリン3gスター",
+    "item.lazypower.lazy_star": "Lazyスター",
+
+    "item.lazypower.lazyium_ingot": "Lazyiumインゴット",
+    "item.lazypower.lazyium_dust": "lazyium粉",
+
     "item.lazypower.yuba_plate": "湯葉プレート",
     "item.lazypower.valine3g": "バリン3g",
-    "item.jazypower.nitro_valine_alloy_ingot": "ニトロ-バリン合金インゴット",
-    "item.jazypower.prometheum_valine_alloy_ingot": "プロメテウム-バリン合金インゴット",
+    "item.lazypower.nitro_valine_alloy_ingot": "ニトロ-バリン合金インゴット",
+    "item.lazypower.prometheum_valine_alloy_ingot": "プロメテウム-バリン合金インゴット",
     "item.lazypower.fissile_fuel": "核分裂燃料",
     "item.lazypower.uranium_yellow_cake": "ウランケーキ",
     "item.lazypower.fluorite": "蛍石",
 
+    "block.lazypower.lazyium_block": "Lazyiumブロック",
     "block.lazypower.nitro_valine_alloy_block": "ニトロ-バリン合金ブロック",
     "block.lazypower.prometheum_valine_alloy_block": "プロメテウム-バリン合金ブロック",
+    "block.lazypower.lazy_trophy": "Lazyトロフィー",
+    "block.lazypower.valine_trophy": "バリントロフィー",
 
     "fluid.lazypower.ethene": "エチレン"
 }

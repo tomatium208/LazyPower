@@ -36,6 +36,8 @@ ServerEvents.recipes(event => {
 
     event.remove({ id: "cookingforblockheads:sink" })
 
+    event.remove({ mod: "dankstorage" })
+
     event.shaped("cookingforblockheads:sink", [
         "S  ",
         "B  ",
@@ -57,6 +59,23 @@ ServerEvents.recipes(event => {
         D: "#c:ingots/duratium"
     })
 
+    event.shaped("dankstorage:dank_6",[
+        "PPP",
+        "P P",
+        "PPP"
+    ],{
+        P:'#minecraft:planks'
+    })
+
+    event.shaped("dankstorage:dock",[
+        "OOO",
+        "O O",
+        "OIO"
+    ],{
+        O:"obsidian",
+        I:"#c:nuggets/platinum"
+    })
+
     event.shapeless("lazypower:lazyium_block", [
         "9x #c:ingots/lazyium"
     ]).id("lazypower:lazyium_block")
@@ -66,7 +85,7 @@ ServerEvents.recipes(event => {
     ]).id("lazypower:lazyium_ingot_from_block")
 
     event.shapeless("lazypower:nitro_valine_alloy_block", [
-        "9x #c:ingots/lazyium_valine"
+        "9x #c:ingots/nitro_valine"
     ]).id("lazypower:nitro_valine_alloy_block")
 
     event.shapeless("9x lazypower:nitro_valine_alloy_ingot", [
@@ -86,13 +105,15 @@ ServerEvents.recipes(event => {
         "lazypower:valine3g_star"
     ]).id("lazypower:creative_storage_cell")
 
-    event.smelting("lazypower:lazyium_ingot", "#c:ores/lazyium").id("lazypower:smelting/lazyium_ingot_from_ore")
+    event.smelting("lazypower:lazyium_ingot", "#c:dusts/lazyium").id("lazypower:smelting/lazyium_ingot_from_dust")
 
     createDeploying("powah:energy_cell_creative", "powah:energy_cell_nitro", "lazypower:lazy_star", "lazypower:creative_energy_cell")
     createDeploying("create:creative_motor", "create:cogwheel", "lazypower:lazy_star", "lazypower:creative_motor")
     createDeploying("oritech:creative_tank_block", "oritech:small_tank_block", "lazypower:lazy_star", "lazypower:creative_tank")
     createDeploying("create:creative_blaze_cake", "create:blaze_cake", "lazypower:lazy_star", "lazypower:creative_blaze_cake")
     createDeploying("create:creative_crate", "minecraft:barrel", "lazypower:lazy_star", "lazypower:creative_crate")
+
+
 
     event.recipes.powah.energizing(["#c:nuggets/platinum", "#c:gems/quartz"], "64x integrateddynamics:crystalized_menril_chunk", 4000).id("lazypower:energizing/crystalized_menril_chunk")
     event.recipes.powah.energizing(["1x integrateddynamics:crystalized_menril_block", "3x oritech:raw_silicon"], "16x ae2:certus_quartz_crystal", 8000).id("lazypower:energizing/certus_quartz_crystal")
@@ -300,8 +321,8 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "oritech:particle_collision",
         "fluidInput": {
-            "amount": 500,
-            "fluid": "minecraft:water"
+            "amount": 0,
+            "fluid": "minecraft:empty"
         },
         "fluidOutputs": [],
         "ingredients": [
@@ -319,5 +340,29 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 5000
+    })
+
+    event.custom({
+        "type": "oritech:particle_collision",
+        "fluidInput": {
+            "amount": 0,
+            "fluid": "minecraft:empty"
+        },
+        "fluidOutputs": [],
+        "ingredients": [
+            {
+                "tag": "c:seeds"
+            },
+            {
+                "tag": "c:seeds"
+            }
+        ],
+        "results": [
+            {
+                "count": 2,
+                "id": "lazypower:yuba_plate"
+            }
+        ],
+        "time": 300
     })
 })

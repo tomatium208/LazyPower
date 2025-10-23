@@ -1,0 +1,644 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "02712F275931D1C6"
+	group: ""
+	id: "02712F275931D1C6"
+	images: [
+		{
+			height: 1.0d
+			image: "oritech:item/super_ai_chip"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			height: 3.0d
+			image: "lazypower:textures/oritech.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			height: 3.0d
+			image: "lazypower:textures/powah.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "powah:item/capacitor_niotic"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 1.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0A92C9E0302A0DFA"
+			rewards: [{
+				count: 8
+				id: "461916B7B19FD693"
+				item: {
+					count: 1
+					id: "oritech:iron_dust"
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				count: 16L
+				id: "58B58C2ADD7D5312"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0A92C9E0302A0DFA"]
+			id: "02C5F858242715FE"
+			tasks: [{
+				id: "6F476F842FC32802"
+				item: { count: 1, id: "powah:dielectric_paste" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A92C9E0302A0DFA"]
+			id: "798292C8415853DD"
+			tasks: [{
+				id: "55D211DD314B57AB"
+				item: { count: 1, id: "oritech:nickel_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A92C9E0302A0DFA"]
+			id: "38A5245682D225F7"
+			tasks: [{
+				id: "20E9371F6B688DB2"
+				item: { count: 1, id: "oritech:steel_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["284BBB973E1D6F19"]
+			id: "161D8B0C1284932E"
+			tasks: [{
+				id: "6819E8DA2E21D6AF"
+				item: { count: 1, id: "oritech:motor" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"798292C8415853DD"
+				"38A5245682D225F7"
+			]
+			id: "284BBB973E1D6F19"
+			tasks: [{
+				id: "00A7BFF996CDD4D5"
+				item: { count: 1, id: "oritech:magnetic_coil" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["161D8B0C1284932E"]
+			id: "7DE617AC3EA175F9"
+			tasks: [{
+				id: "18EA62DCF736952E"
+				item: { count: 1, id: "oritech:centrifuge_block" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7DE617AC3EA175F9"]
+			id: "18A88CACF347EBF6"
+			tasks: [{
+				id: "1FBC1BC10A18AB64"
+				item: { count: 1, id: "oritech:carbon_fibre_strands" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7DE617AC3EA175F9"]
+			id: "1ED9102E9B538310"
+			tasks: [{
+				id: "107FFE975076BCAF"
+				item: { count: 1, id: "oritech:raw_biopolymer" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1ED9102E9B538310"]
+			id: "355B7E24DE77A426"
+			tasks: [{
+				id: "51BF3301AFF56DF3"
+				item: { count: 1, id: "oritech:plastic_sheet" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"18A88CACF347EBF6"
+				"355B7E24DE77A426"
+				"14A69FB95485125A"
+			]
+			id: "66096E64FFB95A18"
+			tasks: [{
+				id: "75D0751571E3F49C"
+				item: { count: 1, id: "oritech:processing_unit" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["66096E64FFB95A18"]
+			id: "444A0D1C1DB35E81"
+			tasks: [{
+				id: "0499AEFD91C464E7"
+				item: { count: 1, id: "oritech:flux_gate" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["444A0D1C1DB35E81"]
+			id: "37AE7D0BD342598B"
+			tasks: [{
+				id: "394C804EE1EEC035"
+				item: { count: 1, id: "oritech:atomic_forge_block" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["46A0BDA8251EBF3E"]
+			id: "4DA1A91DF10C3BE3"
+			tasks: [{
+				id: "1F71120529C4D8FB"
+				item: { count: 1, id: "oritech:advanced_computing_engine" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["37AE7D0BD342598B"]
+			id: "46A0BDA8251EBF3E"
+			tasks: [{
+				id: "1AFA739E69EF3BF2"
+				item: { count: 1, id: "oritech:silicon_wafer" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DA1A91DF10C3BE3"]
+			id: "28087AF5FB2EE8A8"
+			tasks: [{
+				id: "60FC498CC69DAC0A"
+				item: { count: 1, id: "oritech:super_ai_chip" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["28087AF5FB2EE8A8"]
+			id: "51F2DCE7742CC083"
+			tasks: [{
+				id: "76602327CB8852EC"
+				item: { count: 1, id: "oritech:heisenberg_compensator" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0A92C9E0302A0DFA"]
+			id: "2F9F127DD2E2DA47"
+			tasks: [{
+				id: "23D74B0256A494A5"
+				item: { count: 1, id: "powah:capacitor_basic" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["02C5F858242715FE"]
+			id: "2D6165C45BA2E895"
+			tasks: [{
+				id: "0D79A281C7CFAC1F"
+				item: { count: 1, id: "powah:energizing_orb" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2F9F127DD2E2DA47"]
+			id: "1430C21326E10174"
+			tasks: [{
+				id: "19E040E8C2E26412"
+				item: { count: 1, id: "powah:energizing_rod_starter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "14A69FB95485125A"
+			tasks: [{
+				id: "4BEFF40A215B6FEA"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1430C21326E10174"]
+			id: "0BFD2FE33DC86AEB"
+			tasks: [{
+				id: "69D8D5764E0F3A68"
+				item: { count: 1, id: "powah:steel_energized" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0BFD2FE33DC86AEB"]
+			id: "5D65FD219ED733CA"
+			tasks: [{
+				id: "6A4F1F72C4A15D8C"
+				item: { count: 1, id: "powah:capacitor_hardened" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0BFD2FE33DC86AEB"]
+			id: "5F2AA1D29D381595"
+			tasks: [{
+				id: "72857A9F4144D783"
+				item: { count: 1, id: "powah:crystal_blazing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F2AA1D29D381595"]
+			id: "69D23FA8F7431A77"
+			tasks: [{
+				id: "57A586C45A1D94A9"
+				item: { count: 1, id: "powah:crystal_niotic" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5F2AA1D29D381595"]
+			id: "272711355F145A99"
+			tasks: [{
+				id: "7F81D5D52D71EE26"
+				item: { count: 1, id: "powah:capacitor_blazing" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["69D23FA8F7431A77"]
+			id: "3ACBDDE782DA937E"
+			tasks: [{
+				id: "300D4499EE8726DB"
+				item: { count: 1, id: "powah:capacitor_niotic" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["69D23FA8F7431A77"]
+			id: "0B2221C4AAE92412"
+			tasks: [{
+				id: "262DAA2C0956AE5A"
+				item: { count: 1, id: "powah:crystal_spirited" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B2221C4AAE92412"]
+			id: "5622D51E5CD6FD89"
+			tasks: [{
+				id: "0FBC4EEA7D24B25B"
+				item: { count: 1, id: "powah:capacitor_spirited" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0B2221C4AAE92412"]
+			id: "6CF7ED61C6203D74"
+			tasks: [{
+				id: "71330132707211D2"
+				item: { count: 1, id: "powah:crystal_nitro" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6CF7ED61C6203D74"]
+			id: "4E388EA2BA64F941"
+			tasks: [{
+				id: "71B1281B07087D1C"
+				item: { count: 1, id: "powah:capacitor_nitro" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"17A3B06116BC8646"
+				"236C992FBA4EA802"
+				"3A158E2455D8B39D"
+				"1FAF079A13BF17C5"
+				"3165B9C421E5D9E8"
+				"0222EB6A0B5A4E77"
+				"67C2E83C30A27BB1"
+				"0B07D8C73D1F0781"
+			]
+			id: "6A6866B70CBF7E45"
+			rewards: [{
+				id: "7F0D2718538604A8"
+				item: {
+					count: 1
+					id: "lazypower:lazy_trophy"
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "593BA78DA19F2542"
+				item: { count: 1, id: "lazypower:lazy_star" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			id: "236C992FBA4EA802"
+			tasks: [{
+				id: "639B2D0C6FBE955F"
+				item: { count: 1, id: "ae2:singularity" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			id: "3A158E2455D8B39D"
+			tasks: [{
+				id: "0AF6FC7D8EB969BE"
+				item: { count: 1, id: "minecraft:dragon_egg" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			id: "1FAF079A13BF17C5"
+			tasks: [{
+				id: "7605D4B9159421FA"
+				item: { count: 1, id: "minecraft:mace" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			id: "3165B9C421E5D9E8"
+			tasks: [{
+				id: "41E2A5CC9FEB9527"
+				item: { count: 1, id: "minecraft:enchanted_golden_apple" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7442E6CBF382FF6C"]
+			hide_dependency_lines: true
+			id: "0222EB6A0B5A4E77"
+			tasks: [{
+				id: "12A3FE1FF9C07C5B"
+				item: { count: 1, id: "oritech:machine_core_7" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["51F2DCE7742CC083"]
+			hide_dependency_lines: true
+			id: "67C2E83C30A27BB1"
+			tasks: [{
+				id: "45FDE13F6E389297"
+				item: { count: 1, id: "oritech:nuke" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.5d
+		}
+		{
+			id: "0B07D8C73D1F0781"
+			tasks: [{
+				id: "4F590030F7B65176"
+				item: { count: 1, id: "aeinfinitybooster:dimension_card" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6CF7ED61C6203D74"]
+			hide_dependency_lines: true
+			id: "17A3B06116BC8646"
+			tasks: [{
+				id: "673C111A389AC718"
+				item: { count: 1, id: "powah:reactor_nitro" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["437F5E1DC218FEC6"]
+			id: "49E42A62F3377940"
+			tasks: [{
+				id: "77BE6B33E7641666"
+				item: { count: 1, id: "oritech:accelerator_controller" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["444A0D1C1DB35E81"]
+			id: "437F5E1DC218FEC6"
+			tasks: [{
+				id: "2B6774CE9F4205DB"
+				item: { count: 1, id: "oritech:ion_thruster" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49E42A62F3377940"]
+			id: "32CD0B0607CB516B"
+			tasks: [{
+				id: "4C609E69C2C69D00"
+				item: { count: 1, id: "oritech:overcharged_crystal" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"32CD0B0607CB516B"
+				"51F2DCE7742CC083"
+			]
+			id: "7442E6CBF382FF6C"
+			tasks: [{
+				id: "529328E8EDB38F22"
+				item: { count: 1, id: "oritech:prometheum_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6A6866B70CBF7E45"]
+			id: "55E4C88128F2EB29"
+			tasks: [{
+				id: "686DFD7526260BDF"
+				item: { count: 1, id: "powah:energy_cell_creative" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6A6866B70CBF7E45"]
+			id: "44ACAF9E58F6538E"
+			tasks: [{
+				id: "31016857AEF2AC9B"
+				item: { count: 1, id: "create:creative_motor" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6A6866B70CBF7E45"]
+			id: "37B34434BEC4FFAD"
+			tasks: [{
+				id: "1E15D74D4C3B5FFF"
+				item: { count: 1, id: "oritech:creative_tank_block" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6A6866B70CBF7E45"]
+			id: "4EB3C0EA47AC3384"
+			tasks: [{
+				id: "3FE5ABABD878A610"
+				item: { count: 1, id: "create:creative_crate" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6A6866B70CBF7E45"]
+			id: "307F64959C8DDC8B"
+			tasks: [{
+				id: "4D9AC30C0311FE15"
+				item: { count: 1, id: "create:creative_blaze_cake" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: [
+				"4EB3C0EA47AC3384"
+				"44ACAF9E58F6538E"
+				"307F64959C8DDC8B"
+				"55E4C88128F2EB29"
+				"37B34434BEC4FFAD"
+			]
+			id: "1F0FB0DD77CE385D"
+			rewards: [{
+				id: "1F126DB0E8E10799"
+				item: {
+					count: 1
+					id: "lazypower:valine_trophy"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "38D5121F42726464"
+				item: { count: 1, id: "lazypower:valine3g_star" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 15.5d
+		}
+	]
+}

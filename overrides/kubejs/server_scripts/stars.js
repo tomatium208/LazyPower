@@ -16,17 +16,17 @@ ServerEvents.recipes(event => {
             "N": {
                 "item": "oritech:nuke"
             },
-            "D": {
-                "item": "aeinfinitybooster:dimension_card"
-            },
             "r": {
                 "item": "powah:reactor_nitro"
+            },
+            "D": {
+                "item": "aeinfinitybooster:dimension_card"
             },
             "s": {
                 "item": "ae2:singularity"
             },
-            "M": {
-                "item": 'oritech:promethium_axe'
+            "d": {
+                "item": 'minecraft:dragon_egg'
             },
             "m": {
                 "item": "minecraft:mace"
@@ -42,9 +42,9 @@ ServerEvents.recipes(event => {
             "    R    ",
             "   RYR   ",
             "   RYR   ",
-            "RRRNDrRRR",
+            "RRRNrDRRR",
             "RYYCSsYYR",
-            " RYEmMYR ",
+            " RYEmdYR ",
             " RYYYYYR ",
             "RYYRRRYYR",
             "RRR   RRR"
@@ -87,16 +87,31 @@ ServerEvents.recipes(event => {
             },
             "s": {
                 "item": 'oritechthings:addon_block_speed_tier_9'
+            },
+            "m": {
+                "item": 'create:creative_motor'
+            },
+            "p": {
+                "item": 'powah:energy_cell_creative'
+            },
+            "t": {
+                "item": 'oritech:creative_tank_block'
+            },
+            "c": {
+                "item": 'create:creative_crate'
+            },
+            "b": {
+                "item": 'create:creative_blaze_cake'
             }
         },
         "pattern": [
             "    R    ",
             "   RYR   ",
-            "   RYR   ",
+            "   RmR   ",
             "RRRPACRRR",
-            "RYY S YYR",
+            "RYp S tYR",
             " RYseEYR ",
-            " RYYYYYR ",
+            " RYcYbYR ",
             "RYYRRRYYR",
             "RRR   RRR"
         ],

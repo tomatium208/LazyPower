@@ -4,7 +4,10 @@ StartupEvents.registry("item", event => {
     event.create("lazypower:power_star").textures({layer0:"lazypower:item/power_star",layer1:"lazypower:item/power_star_flash"})
 
     event.create("lazypower:lazyium_ingot").tag("c:ingots/lazyium").tag("c:ingots")
-    event.create("lazypower:nitro_valine_alloy_ingot").tag("c:ingots/lazyium_valine").tag("c:ingots")
+    event.create("lazypower:lazyium_dust").tag("c:dusts/lazyium").tag("c:dusts")
+    //event.create("lazypower:raw_lazyium").tag("c:raw_materials/lazyium").tag("c:raw_materials")
+
+    event.create("lazypower:nitro_valine_alloy_ingot").tag("c:ingots/nitro_valine").tag("c:ingots")
     event.create("lazypower:prometheum_valine_alloy_ingot").tag("c:ingots/prometheum_valine").tag("c:ingots")
 
     event.create("lazypower:valine3g")
@@ -28,6 +31,9 @@ StartupEvents.registry("block", event => {
     event.create("lazypower:lazyium_ore").tag("c:ores/lazyium").tag("c:ores").displayName("Lazyium Ore")
     .hardness(3.0)
     .tag("minecraft:mineable/pickaxe").tag("minecraft:needs_diamond_tool")
+
+    event.create("lazypower:lazy_trophy")
+    event.create("lazypower:valine_trophy")
 })
 StartupEvents.registry("fluid", event => {
     event.create("lazypower:ethene","thin").tint("#efa5ff").noBucket().noBlock()

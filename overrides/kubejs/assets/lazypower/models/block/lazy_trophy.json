@@ -1,0 +1,6 @@
+{
+	"parent": "lazypower:block/trophy",
+	"textures": {
+		"item": "lazypower:item/lazy_star"
+	}
+}
