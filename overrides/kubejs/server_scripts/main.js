@@ -181,6 +181,36 @@ ServerEvents.recipes(event => {
     }).id("lazypower:assembler/electron_tube")
 
     event.custom({
+        "type": "oritech:assembler",
+        "fluidInput": {
+            "amount": 0,
+            "fluid": "minecraft:empty"
+        },
+        "fluidOutputs": [],
+        "ingredients": [
+            {
+                "item": 'powah:crystal_niotic'
+            },
+            {
+                "tag": 'c:ingots/duratium'
+            },
+            {
+                "tag": 'c:dusts/fluix'
+            },
+            {
+                "item": 'sweetpotato:baked_sweet_potato'
+            }
+        ],
+        "results": [
+            {
+                "count": 3,
+                "id": "lazypower:lazyium_dust"
+            }
+        ],
+        "time": 20
+    }).id("lazypower:assembler/electron_tube")
+
+    event.custom({
         "type": "oritech:centrifuge_fluid",
         "fluidInput": {
             "amount": 100,
@@ -199,7 +229,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 80
-    })
+    }).id("lazypower:valine3g")
 
     event.custom({
         "type": "oritech:centrifuge_fluid",
@@ -220,7 +250,7 @@ ServerEvents.recipes(event => {
         ],
         "results": [],
         "time": 80
-    })
+    }).id("lazypower:ethene")
 
     event.custom({
         "type": "oritech:foundry",
@@ -244,7 +274,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 60
-    })
+    }).id("lazypower:nitro_valine_alloy_ingot")
 
     event.custom({
         "type": "oritech:foundry",
@@ -268,7 +298,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 60
-    })
+    }).id("lazypower:prometheum_valine_alloy_ingot")
 
     event.custom({
         "type": "oritech:foundry",
@@ -292,7 +322,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 60
-    })
+    }).id("lazypower:fissile_fuel")
 
     event.custom({
         "type": "oritech:foundry",
@@ -316,7 +346,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 100
-    })
+    }).id("lazypower:uranium_yellow_cake")
 
     event.custom({
         "type": "oritech:particle_collision",
@@ -340,7 +370,7 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 5000
-    })
+    }).id("lazypower:fluorite")
 
     event.custom({
         "type": "oritech:particle_collision",
@@ -364,5 +394,5 @@ ServerEvents.recipes(event => {
             }
         ],
         "time": 300
-    })
+    }).id("lazypower:yuba_plate")
 })
